@@ -27,10 +27,10 @@ functions:
     dependsOn:
       - WebsiteBucket
       - WebsiteCloudfront
-    events:
-      - s3:
-          bucket: ${self:custom.domainName}
-          existing: true
+    # events:
+    #   - s3:
+    #       bucket: ${self:custom.domainName}
+    #       existing: true
 
 resources:
   Resources:
